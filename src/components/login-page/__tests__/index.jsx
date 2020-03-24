@@ -5,6 +5,7 @@ import { render } from '@testing-library/react';
 import LoginUI from '../index';
 import { text as loginBodyText } from '../login-body/index';
 import { text as loginHeaderText } from '../login-header/index';
+import { text as loginButton } from '../login-header/google-oauth/index'
 
 test('should render all child copy', () => {
   const { getByText } = render(<LoginUI />);
@@ -51,7 +52,7 @@ test('should render all child images', () => {
   const discoverImage = getByAltText(loginBodyText.DownloadContent[0].altText);
   const findPetImage = getByAltText(loginBodyText.DownloadContent[1].altText);
   const furreverImage = getByAltText(loginBodyText.DownloadContent[2].altText);
-  const googleSignIn = getByAltText(loginHeaderText.googleSigninButton.altText);
+  const googleSignIn = getByAltText(loginButton.googleSigninButton.altText);
   const heroImage = getByAltText(loginBodyText.heroImage.altText);
   const logo = getByAltText(loginHeaderText.logo.altText);
   expect(androidButton).toBeInTheDocument();
