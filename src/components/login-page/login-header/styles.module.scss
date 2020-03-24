@@ -1,0 +1,30 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 425px;
+}
+
+.Headline {
+  font-family: 'Patua One', cursive;
+  font-size: 70px;
+  padding: 0 200px 24px 200px;
+  line-height: 1.11;
+  margin: 0;
+}
+
+.Logo {
+  padding: 32px;
+  margin: 0 0 42px 0;
+}
+
+.SubHead {
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.5;
+  padding: 0 272px 32px 272px;
+  margin: 0;
+}
