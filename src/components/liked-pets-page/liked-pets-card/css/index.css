@@ -1,0 +1,66 @@
+.LikedPets-background {
+  background-color: #fafafa;
+  position: relative;
+}
+
+.LikedPets-wrap {
+  width: 475px;
+  padding-top: 125px;
+  padding-left: 41px;
+  padding-bottom: 204px;
+  background-color: #fafafa;
+}
+
+.MyMatches {
+  width: 227px;
+  height: 44px;
+  font-family: 'Patua One', cursive;
+  font-size: 36px;
+  letter-spacing: 1.13px;
+  color: #222222;
+  margin-bottom: 24px;
+}
+
+.ShowingMyMatches {
+  width: 161px;
+  height: 22px;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.56px;
+  color: #222222;
+  margin-right: 96px;
+}
+
+.MyMatches-number {
+  font-weight: bold;
+  margin: 0 4px;
+}
+
+.List-view {
+  width: 20px;
+  height: 20px;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.44px;
+  color: #2f2c39;
+  margin-right: 8px;
+}
+
+.Sort-by {
+  width: 20px;
+  height: 20px;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.44px;
+  color: #2f2c39;
+  margin-left: 24px;
+  margin-right: 8px;
+}
+
+.LikedPetsContainer-wrap {
+  width: 486px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
