@@ -1,0 +1,162 @@
+.titleMyMatches-Copy-2 {
+  width: 227px;
+  height: 44px;
+  font-family: PatuaOne;
+  font-size: 36px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.13px;
+  color: #222222;
+}
+
+.titleMyMatches-Copy-3 {
+  width: 161px;
+  height: 22px;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.56px;
+  color: #222222;
+}
+.titleMyMatches-Copy-3 .text-style-1 {
+  font-weight: bold;
+}
+
+.List-view {
+  width: 58px;
+  height: 17px;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.44px;
+  color: #2f2c39;
+}
+
+.Sort-by {
+  width: 47px;
+  height: 17px;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.44px;
+  color: #2f2c39;
+}
+
+/*  LikedPetCard Component */
+
+.Heart {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
+.grid-view {
+  width: 221px;
+  height: 269px;
+  object-fit: contain;
+}
+
+.Pet {
+  width: 221px;
+  height: 214px;
+  border-radius: 20px;
+}
+
+.White-box {
+  width: 221px;
+  height: 87px;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.Pets-name {
+  width: 183px;
+  height: 17px;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.44px;
+  color: #302c3a;
+}
+
+.Distance {
+  width: 34px;
+  height: 18px;
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.38px;
+  color: #8a8a8f;
+}
+
+.Oval-Copy-4 {
+  width: 4px;
+  height: 4px;
+  background-color: #cccccc;
+}
+
+.Shelter {
+  width: 107px;
+  height: 18px;
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.38px;
+  color: #8a8a8f;
+}
+
+.Age {
+  width: 39px;
+  height: 18px;
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.38px;
+  color: #8a8a8f;
+}
+
+.Oval-Copy-3 {
+  width: 4px;
+  height: 4px;
+  background-color: #cccccc;
+}
+
+.Size {
+  width: 60px;
+  height: 18px;
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.38px;
+  color: #8a8a8f;
+}
+
+.inline-block {
+  display: inline-block;
+}
