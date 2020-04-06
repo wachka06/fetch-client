@@ -8,6 +8,7 @@ import { createHttpLink } from 'apollo-link-http';
 import { setContext } from 'apollo-link-context';
 import { InMemoryCache } from 'apollo-cache-inmemory';
 import { ApolloProvider } from '@apollo/react-hooks';
+import LikedPets from './components/likedPets';
 
 const apiUri =
   window.location.hostname === `localhost`
@@ -37,8 +38,9 @@ const App = () => (
     <div className="App">
       <Router>
         <Switch>
-          <Route exact path="/" component={LoginUI} />
-          <Route path="/likedPets" component={LikedPetsPage} />
+          <Route exact path="/likedpets" component={LikedPetsPage} />
+          <Route exact path="/likedpets" component={LikedPets} />
+          <Route path="/" component={LoginUI} />
         </Switch>
       </Router>
     </div>

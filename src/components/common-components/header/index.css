@@ -1,0 +1,25 @@
+.Logo {
+  width: 89px;
+  height: 59px;
+  object-fit: contain;
+  z-index: 2;
+  position: fixed;
+  top: 10px;
+  left: 468px;
+}
+
+.Path {
+  width: 1024px;
+  object-fit: contain;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+}
+
+.Path2 {
+  width: 1024px;
+  object-fit: contain;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
