@@ -1,12 +1,9 @@
-import React, { Fragment } from 'react';
-import googleButton from './images/google_signin.svg';
+import React, { Fragment, useState } from 'react';
 import logoImage from './../../common-components/images/logo-black.svg';
 import { Container, Headline, SubHead, Logo } from './styles.module.scss';
+import GoogleSignIn from './google-oauth/index';
 
 export const text = {
-  googleSigninButton: {
-    altText: 'Sign in with Google button',
-  },
   headline: 'Find your furrever best friend',
   logo: {
     altText: 'Fetch logo',
@@ -21,9 +18,7 @@ const LoginHeader = () => (
     <main className={Container}>
       <h1 className={Headline}>{text.headline}</h1>
       <h2 className={SubHead}>{text.subHead}</h2>
-      <a href="googleAuth">
-        <img src={googleButton} alt={text.googleSigninButton.altText}></img>
-      </a>
+      <GoogleSignIn />
     </main>
   </Fragment>
 );
