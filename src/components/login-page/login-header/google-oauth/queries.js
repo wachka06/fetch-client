@@ -8,4 +8,4 @@ const FIND_OR_CREATE_USER = gql`
   }
 `;
 
-export default FIND_OR_CREATE_USER
+export default FIND_OR_CREATE_USER;
