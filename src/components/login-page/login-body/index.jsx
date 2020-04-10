@@ -25,14 +25,14 @@ export const text = {
     {
       title: 'Find the perfect pet',
       description:
-        "By matching elements from your and your pet's personality, you will get a pet that matches your lifestyle and your needs",
+        "By matching elements from your and your pet's personality, you will get a pet that matches your lifestyle and your needs.",
       image: findThePet,
       altText: 'Find the perfect pet icon',
     },
     {
       title: 'Furrever best friends!',
       description:
-        'Contact the shelter to meet your furry friend and take him home with you',
+        'Contact the shelter to meet your furry friend and take him home with you.',
       image: furrever,
       altText: 'Furrever friend icon',
     },
@@ -43,7 +43,7 @@ export const text = {
   primaryCTA: 'Download now for free',
   primaryHeadline: 'Go Fetch!',
   primarySubHead:
-    'For full access download the appand start adding pets to your liked list',
+    'For full access, download the app and start adding pets to your liked list',
 };
 
 const LoginBody = () => (

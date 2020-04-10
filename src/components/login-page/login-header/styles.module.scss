@@ -1,3 +1,5 @@
+@import './../../../constants/_fonts';
+
 .Container {
   display: flex;
   flex-direction: column;
@@ -8,7 +10,7 @@
 }
 
 .Headline {
-  font-family: 'Patua One', cursive;
+  font-family: $PatuaOneReg;
   font-size: 70px;
   padding: 0 200px 24px 200px;
   line-height: 1.11;
@@ -21,7 +23,7 @@
 }
 
 .SubHead {
-  font-family: 'Lato', sans-serif;
+  font-family: $LatoLight;
   font-size: 24px;
   font-weight: 300;
   line-height: 1.5;

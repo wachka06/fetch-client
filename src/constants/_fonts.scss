@@ -1,0 +1,12 @@
+$LatoLight: 'Lato-Light', sans-serif;
+$LatoBlack: 'Lato-Black', sans-serif;
+$PatuaOneReg: 'PatuaOne-Regular', serif;
+
+@font-face {
+  font-family: 'Lato-Light';
+  src: url('./font-sources/Lato-Light.ttf') format('truetype');
+  font-family: 'Lato-Black';
+  src: url('./font-sources/Lato-Black.ttf') format('truetype');
+  font-family: 'PatuaOne-Regular';
+  src: url('./font-sources/PatuaOne-Regular.ttf') format('truetype');
+}
