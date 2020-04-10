@@ -10,7 +10,7 @@ import { ApolloProvider } from '@apollo/react-hooks';
 const apiUri =
   window.location.hostname === `localhost`
     ? `http://localhost:4000/`
-    : `to be replaced with Heroku URI`;
+    : `https://fetch-server-staging.herokuapp.com/`;
 const httpLink = createHttpLink({
   uri: apiUri,
 });
