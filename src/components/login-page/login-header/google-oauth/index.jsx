@@ -2,7 +2,7 @@ import React from 'react';
 import googleSignInButton from './images/google_signin.svg';
 import { GoogleLogin } from 'react-google-login';
 import { useMutation } from '@apollo/react-hooks';
-import FIND_OR_CREATE_USER from './queries';
+import FIND_OR_CREATE_USER from '../../../../constants/queries/findOrCreateUserMutation';
 
 export const text = {
   googleSigninButton: {

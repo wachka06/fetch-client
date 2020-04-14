@@ -1,0 +1,28 @@
+
+.LikedPetsPage {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+}
+
+.Page {
+  height: 100vh;
+  width: 100wv;
+}
+
+.LikedPetsCardsContainer {
+  width: 45%;
+  height: 100%;
+}
+
+.LikedPetsMapContainer {
+  margin-top: 0;
+  width: 55%;
+  height: 100%;
+}
+
+.Header {
+  height: 9vh;
+  width: 100vw;
+}

@@ -1,6 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import LoginUI from './components/login-page/index.jsx';
+import LikedPetsPage from './components/liked-pets-page';
+
 import { ApolloClient } from 'apollo-client';
 import { createHttpLink } from 'apollo-link-http';
 import { setContext } from 'apollo-link-context';
@@ -35,7 +37,8 @@ const App = () => (
     <div className="App">
       <Router>
         <Switch>
-          <Route path="/" component={LoginUI} />
+          <Route exact path="/" component={LoginUI} />
+          <Route path="/likedPets" component={LikedPetsPage} />
         </Switch>
       </Router>
     </div>
