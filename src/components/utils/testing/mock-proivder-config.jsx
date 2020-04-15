@@ -1,4 +1,4 @@
-import FIND_OR_CREATE_USER from '../../login-page/login-header/google-oauth/queries';
+import FIND_OR_CREATE_USER from '../../../constants/queries/findOrCreateUserMutation'
 
 export const googleLoginMock = [
   {
