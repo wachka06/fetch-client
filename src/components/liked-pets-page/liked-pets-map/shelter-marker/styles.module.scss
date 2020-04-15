@@ -1,0 +1,15 @@
+@import '../../../../constants/colors';
+
+.markerContainer {
+  width: 40px;
+  height: 38px;
+}
+
+.markerCount {
+  width: 100%;
+  color: $FetchRed;
+  position: absolute;
+  top: 10px;
+  text-align: center;
+  font-size: 12px;
+}
