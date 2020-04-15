@@ -2,6 +2,7 @@ import React from 'react';
 import googleSignInButton from './images/google_signin.svg';
 import { GoogleLogin } from 'react-google-login';
 import { useMutation } from '@apollo/react-hooks';
+import { Button } from './styles.module.scss';
 import FIND_OR_CREATE_USER from '../../../../constants/queries/findOrCreateUserMutation';
 
 export const text = {
@@ -43,6 +44,7 @@ const GoogleSignIn = () => {
       clientId={GOOGLE_CLIENT_ID}
       render={(renderProps) => (
         <img
+          className={Button}
           src={googleSignInButton}
           alt={text.googleSigninButton.altText}
           onClick={renderProps.onClick}
