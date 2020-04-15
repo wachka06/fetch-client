@@ -1,7 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import LoginUI from './components/login-page/index.jsx';
 import LikedPetsPage from './components/liked-pets-page';
+import AuthenticatedRoute from './components/common-components/authenticatedRoute/authenticatedRoute';
 
 import { ApolloClient } from 'apollo-client';
 import { createHttpLink } from 'apollo-link-http';
@@ -38,9 +39,8 @@ const App = () => (
     <div className="App">
       <Router>
         <Switch>
-          <Route exact path="/likedpets" component={LikedPetsPage} />
-          <Route exact path="/likedpets" component={LikedPets} />
-          <Route path="/" component={LoginUI} />
+          <Route exact path="/" component={LoginUI} />
+          <AuthenticatedRoute path="/likedPets" component={LikedPetsPage} />
         </Switch>
       </Router>
     </div>

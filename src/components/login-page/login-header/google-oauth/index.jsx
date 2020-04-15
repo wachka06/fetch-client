@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Redirect } from 'react-router-dom';
 import googleSignInButton from './images/google_signin.svg';
 import { GoogleLogin } from 'react-google-login';
 import { useMutation } from '@apollo/react-hooks';
@@ -19,6 +20,7 @@ const GOOGLE_CLIENT_ID =
   '615918356762-fs39l16jhv04q3l54bh3pk0882aj9cin.apps.googleusercontent.com';
 
 const GoogleSignIn = () => {
+  const [redirectUrl, setRedirectUrl] = useState();
   const [createUser] = useMutation(FIND_OR_CREATE_USER);
   const failureResponseGoogle = (response) => console.log('failure', response);
   const successResponseGoogle = (response) => {
@@ -36,27 +38,31 @@ const GoogleSignIn = () => {
       },
     })
       .then((response) => setToken(response.data.createUser.token))
+      .then(() => setRedirectUrl('/likedPets'))
       .catch((error) => console.error(`Login Error:`, error));
   };
-
-  return (
-    <GoogleLogin
-      clientId={GOOGLE_CLIENT_ID}
-      render={(renderProps) => (
-        <img
-          className={Button}
-          src={googleSignInButton}
-          alt={text.googleSigninButton.altText}
-          onClick={renderProps.onClick}
-          disabled={renderProps.disabled}
-        ></img>
-      )}
-      buttonText="Login"
-      onSuccess={successResponseGoogle}
-      onFailure={failureResponseGoogle}
-      cookiePolicy={'single_host_origin'}
-    />
-  );
+  if (redirectUrl) {
+    return <Redirect to={redirectUrl} />;
+  } else {
+    return (
+      <GoogleLogin
+        clientId={GOOGLE_CLIENT_ID}
+        render={(renderProps) => (
+          <img
+            className={Button}
+            src={googleSignInButton}
+            alt={text.googleSigninButton.altText}
+            onClick={renderProps.onClick}
+            disabled={renderProps.disabled}
+          ></img>
+        )}
+        buttonText="Login"
+        onSuccess={successResponseGoogle}
+        onFailure={failureResponseGoogle}
+        cookiePolicy={'single_host_origin'}
+      />
+    );
+  }
 };
 
 export default GoogleSignIn;

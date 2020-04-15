@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment } from 'react';
 import logoImage from './../../common-components/images/logo-black.svg';
 import { Container, Headline, SubHead, Logo } from './styles.module.scss';
 import GoogleSignIn from './google-oauth/index';
