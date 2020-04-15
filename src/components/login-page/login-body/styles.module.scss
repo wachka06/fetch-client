@@ -85,3 +85,40 @@
   color: $FetchBrown;
   margin: 0;
 }
+
+@media only screen and (min-width: 1041px) {
+  .DownloadButtonImage {
+    padding-right: 2.3vw;
+  }
+  .DownloadModule {
+    padding-bottom: 1.2vw;
+  }
+  .DownloadModuleImage {
+    padding-right: 1.4vw;
+  }
+  .DownloadModuleItem {
+    padding-bottom: 2.3vw;
+  }
+  .HeroImage {
+    max-width: 38.5vw;
+  }
+  .ModuleDescription {
+    font-size: 1.5vw;
+    line-height: 2vw;
+  }
+  .ModuleHeadline {
+    font-size: 1.3vw;
+    padding-bottom: 1vw;
+  }
+  .PrimaryCTA {
+    font-size: 1.9vw;
+    padding-bottom: 1.5vw;
+  }
+  .PrimaryHeadline {
+    font-size: 4.8vw;
+  }
+  .PrimarySubHead {
+    font-size: 1.9vw;
+    padding-bottom: 2.3vw;
+  }
+}

@@ -31,61 +31,26 @@
   margin: 0;
 }
 
-@media only screen and (min-width: 1040px) {
+@media only screen and (min-width: 1041px) {
   .Container {
-    padding-bottom: 42vw;
+    padding-bottom: 40.9vw;
   }
 
   .Logo {
-    height: 7%;
-    width: 11%;
-    margin-bottom: 7vh;
+    height: 7vw;
+    width: auto;
+    margin-bottom: 4vh;
   }
 
   .Headline {
-    font-size: 7vw;
-    padding-bottom: 2vh;
-    width: 62vw;
+    font-size: 6.7vw;
+    padding-bottom: 2.3vh;
+    width: 61.5vw;
   }
 
   .SubHead {
-    font-size: 2vw;
+    font-size: 2.3vw;
     padding-bottom: 3vh;
-    width: 48vw;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .Logo {
-    height: 84px;
-    width: 127px;
-  }
-}
-
-@media only screen and (min-width: 1300px) {
-  .Logo {
-    height: 91px;
-    width: 138px;
-  }
-}
-
-@media only screen and (min-width: 1400px) {
-  .Logo {
-    height: 98px;
-    width: 148px;
-  }
-}
-
-@media only screen and (min-width: 1500) {
-  .Logo {
-    height: 105px;
-    width: 159px;
-  }
-}
-
-@media only screen and (min-width: 1600) {
-  .Logo {
-    height: 112px;
-    width: 169px;
+    width: 47.7vw;
   }
 }
