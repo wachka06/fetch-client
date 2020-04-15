@@ -19,7 +19,7 @@
 
 .Logo {
   padding: 32px;
-  margin: 0 0 42px 0;
+  margin-bottom: 42px;
 }
 
 .SubHead {
@@ -29,4 +29,63 @@
   line-height: 1.5;
   padding: 0 272px 32px 272px;
   margin: 0;
+}
+
+@media only screen and (min-width: 1040px) {
+  .Container {
+    padding-bottom: 42vw;
+  }
+
+  .Logo {
+    height: 7%;
+    width: 11%;
+    margin-bottom: 7vh;
+  }
+
+  .Headline {
+    font-size: 7vw;
+    padding-bottom: 2vh;
+    width: 62vw;
+  }
+
+  .SubHead {
+    font-size: 2vw;
+    padding-bottom: 3vh;
+    width: 48vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .Logo {
+    height: 84px;
+    width: 127px;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .Logo {
+    height: 91px;
+    width: 138px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .Logo {
+    height: 98px;
+    width: 148px;
+  }
+}
+
+@media only screen and (min-width: 1500) {
+  .Logo {
+    height: 105px;
+    width: 159px;
+  }
+}
+
+@media only screen and (min-width: 1600) {
+  .Logo {
+    height: 112px;
+    width: 169px;
+  }
 }
