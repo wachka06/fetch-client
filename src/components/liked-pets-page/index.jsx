@@ -11,6 +11,7 @@ import LikedPetsContainer from './liked-pets-card/LikedPetsContainer';
 import ListView from './liked-pets-card/img/list-view.svg';
 import SortBy from './liked-pets-card/img/sort-by.svg';
 import GET_LIKED_PETS from '../../constants/queries/likedPetsQuery';
+import NoLikedPets from './liked-pets-card/NoLikedPets';
 
 export const text = {
   mymatches: 'My Matches',
@@ -33,6 +34,8 @@ const LikedPetsPage = () => {
     data: likedPetsResponse,
   } = useQuery(USERS_LIKED_PETS);
 
+  const { data: likedPetsRes } = useQuery(GET_LIKED_PETS);
+
   let likedPetsMap;
   if (userLocationLoading || likedPetsLoading) { likedPetsMap = (<div>Loading...</div>); }
   if (userLocationError || likedPetsError) { likedPetsMap = (<div>ERROR</div>); }
@@ -42,11 +45,10 @@ const LikedPetsPage = () => {
         userLocation={userLocationResponse.currentUser}
         pets={likedPetsResponse.likedPets}
       />
-    );
-  }
-
-  const { data: likedPetsRes } = useQuery(GET_LIKED_PETS);
-  let likedPetsCards = likedPetsRes && likedPetsRes.likedPets.length > 0 ?
+      );
+    };
+ 
+  const likedPetsCards = likedPetsRes && likedPetsRes.likedPets.length > 0 ?
     (
       <div>
         <div className='MyMatches'>{text.mymatches}</div>
@@ -64,7 +66,7 @@ const LikedPetsPage = () => {
         <LikedPetsContainer pets ={likedPetsRes.likedPets}/>
       </div>
     )
-   : null;
+   : <NoLikedPets/>;
 
   return (
     <div className='LikedPets-background'>
@@ -74,7 +76,7 @@ const LikedPetsPage = () => {
           {likedPetsCards}
         </div>
         <div className={styles.LikedPetsMapContainer}>
-          {likedPetsMap}
+          {likedPetsRes && likedPetsRes.likedPets.length > 0 ? likedPetsMap : null}
         </div>
       </main>
       <Footer />

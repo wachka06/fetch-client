@@ -1,0 +1,83 @@
+.Background-path {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.Snapshot {
+  top: 103px;
+  left: 115px;
+  position: fixed;
+}
+
+.Gofetch-wrap {
+  position: fixed;
+  top: 128px;
+  left: 524px;
+}
+
+.Gofetch {
+  width: 355px;
+  height: 61px;
+  font-family: 'Patua One', cursive;
+  font-size: 50px;
+  color: #e17459;
+}
+
+.Gofetch-subtitle {
+  width: 376px;
+  height: 56px;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.4;
+  letter-spacing: 0.63px;
+  color: #222222;
+}
+
+.section-wrap {
+  position: relative;
+  margin-top: 24px;
+}
+
+.dogImg {
+  position: absolute;
+}
+
+.subtitle {
+  width: 376px;
+  height: 17px;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 0.44px;
+  color: #302c3a;
+  margin-left: 80px;
+  margin-bottom: 9px;
+}
+
+.subtext {
+  width: 296px;
+  height: 63px;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.44px;
+  color: #000000;
+  margin-left: 80px;
+}
+
+.Download-title {
+  width: 293px;
+  height: 24px;
+  font-family: 'Patua One';
+  font-size: 20px;
+  color: #e17459;
+  margin-top: 16px;
+}
+
+.Download {
+  margin-top: 16px;
+  margin-right: 32px;
+}
