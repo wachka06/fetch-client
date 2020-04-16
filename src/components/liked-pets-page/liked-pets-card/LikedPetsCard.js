@@ -33,8 +33,6 @@ const LikedPetsCard = ({ photo, name, distance, shelter, age, size, status }) =>
     <div className='Adopted' style={{ display: status === 'ADOPTED' ? 'inline' : 'none' }}>
       <img className='Adopted-shade' src={Adopted} alt='Adopted'/>
       <div className='Adopted-text'>{text.adopted}</div>
-      <div className='Adopted-remove-wrap'></div>
-      <div className='Adopted-remove'>{text.remove}</div>
     </div>
   </div>
 );
