@@ -7,8 +7,8 @@ const LikedPetsContainer = (props) => {
       {props.pets.map(pet => 
         (<LikedPetsCard 
             key={pet.pet.id}
-            photo={pet.pet.photos[0]}
-            name={pet.pet.name}
+            photo={pet.pet.photos ? pet.pet.photos[0] : null}
+            name={pet.pet.name} 
             distance={pet.distance}
             shelter={pet.pet.shelter.name}
             age={pet.pet.age}
