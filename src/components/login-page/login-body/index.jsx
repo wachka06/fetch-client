@@ -77,14 +77,14 @@ const LoginBody = () => (
       </div>
       <h3 className={styles.PrimaryCTA}>{text.primaryCTA}</h3>
       <div className={styles.DownloadButtons}>
-        <a href="#">
+        <a href="https://www.apple.com/ios/app-store/">
           <img
             className={styles.DownloadButtonImage}
             src={appStoreDownload}
             alt={text.appleStoreButton.altText}
           ></img>
         </a>
-        <a href="#">
+        <a href="https://play.google.com">
           <img
             className={styles.DownloadButtonImage}
             src={androidDownload}
