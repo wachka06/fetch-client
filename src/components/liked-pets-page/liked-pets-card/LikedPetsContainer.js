@@ -9,7 +9,7 @@ const LikedPetsContainer = (props) => {
             key={pet.pet.id}
             photo={pet.pet.photos ? pet.pet.photos[0] : null}
             name={pet.pet.name} 
-            distance={pet.distance}
+            distance={pet.pet.distance_to_user}
             shelter={pet.pet.shelter.name}
             age={pet.pet.age}
             size={pet.pet.size}

@@ -7,14 +7,14 @@ import Footer from '../common-components/footer/index';
 import './css/index.css';
 import { useQuery } from '@apollo/react-hooks';
 import gql from 'graphql-tag';
-
+import USERS_LIKED_PETS from '../constants/queries/usersLikedPetsQuery.js';
 
 const GET_LIKED_PETS = gql`
   query {
     likedPets {	 
-      distance
       pet {
         id
+        distance_to_user
         photos
         name 
         age 
@@ -38,7 +38,7 @@ export const text = {
 };
 
 function LikedPets() {
-  const { data } = useQuery(GET_LIKED_PETS);
+  const { data } = useQuery(USERS_LIKED_PETS);
   return (
     <div className='LikedPets-background'>
       {data ?            
